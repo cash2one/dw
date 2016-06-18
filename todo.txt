@@ -1,0 +1,1 @@
+mount.cifs //192.168.11.119/trunk bianjian_trunk   -o rw,username=,password=''
