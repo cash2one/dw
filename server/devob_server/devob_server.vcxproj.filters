@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ManageBattleSession.cpp" />
+    <ClCompile Include="src\ManageMatch.cpp" />
+    <ClCompile Include="src\MatchCell.cpp" />
+    <ClCompile Include="src\MessageMaker.cpp" />
+    <ClCompile Include="src\ObConfig.cpp" />
+    <ClCompile Include="..\battle_server\tools\ManageSingleton.cpp">
+      <Filter>ztools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\battle_server\tools\MessagePump.cpp">
+      <Filter>ztools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\battle_server\tools\MessagePumpImp.cpp">
+      <Filter>ztools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\battle_server\tools\Packet.cpp">
+      <Filter>ztools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\battle_server\tools\Packet_.cpp">
+      <Filter>ztools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\battle_server\tools\PacketHandle.cpp">
+      <Filter>ztools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\battle_server\tools\Singleton.cpp">
+      <Filter>ztools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ManageClientSession.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ManageBattleSession.h" />
+    <ClInclude Include="src\ManageMatch.h" />
+    <ClInclude Include="src\MatchCell.h" />
+    <ClInclude Include="src\MessageMaker.h" />
+    <ClInclude Include="src\ObConfig.h" />
+    <ClInclude Include="..\battle_server\tools\Handle.h">
+      <Filter>ztools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\tools\ManageSingleton.h">
+      <Filter>ztools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\tools\MessagePump.h">
+      <Filter>ztools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\tools\MessagePumpImp.h">
+      <Filter>ztools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\tools\MyGuidDef.h">
+      <Filter>ztools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\tools\Packet.h">
+      <Filter>ztools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\tools\Packet_.h">
+      <Filter>ztools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\tools\PacketHandle.h">
+      <Filter>ztools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\tools\Singleton.h">
+      <Filter>ztools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ManageClientSession.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ztools">
+      <UniqueIdentifier>{655b22b0-a5dd-4a6f-81c0-857dc79b9876}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

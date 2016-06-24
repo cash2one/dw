@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+<!-- 机器人配置 /-->
+<plugin name="robot">
+	<parameter name="account_name_prefix" value="test_"/>
+	<parameter name="account_index_begin" value="1"/>
+	<parameter name="account_index_end" value="10"/>
+	
+	<parameter name="login_once_num" value="10"/>
+	<parameter name="login_interval" value="1"/>
+	<parameter name="logoff_once_num" value="10"/>
+	<parameter name="logoff_interval" value="10"/>
+
+	<parameter name="random_create_name_begin_index" value="1"/>
+	<parameter name="random_create_name_end_index" value="10"/>
+
+	<parameter name="search_friend_times" value="20"/>
+
+	<!-- 接受好友的概率 /-->
+	<parameter name="confirm_add_prob" value="100"/>
+</plugin>
+
+</root>

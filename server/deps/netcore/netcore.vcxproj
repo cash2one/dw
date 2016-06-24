@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E1262C69-E2F8-4141-8394-A353F22E7D5A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>netcore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\open_source\libevent-2.0.22-stable\include;D:\open_source\libevent-2.0.22-stable\WIN32-Code;D:\open_source\RakNet-master\Source;../logger/inc/;../../logger/inc/;D:\working_zyzr\zyzr_frame_asio\deps\logger\inc;$(INC_PATH);$(IncludePath)</IncludePath>
+    <LibraryPath>D:\open_source\libevent-2.0.22-stable;$(LIB_PATH);D:\working_zyzr\zyzr_frame_asio\deps\libs;D:\open_source\RakNet-master\Lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\libevent;..\raknet;..\boost;../logger/inc/;../../logger/inc/;$(IncludePath)</IncludePath>
+    <LibraryPath>..\libs;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(INC_PATH);D:\open_source\libevent-2.0.22-stable\include;D:\open_source\libevent-2.0.22-stable\WIN32-Code;D:\open_source\RakNet-master\Source;$(VC_IncludePath);$(WindowsSDK_IncludePath);..\logger\inc</IncludePath>
+    <LibraryPath>D:\open_source\libevent-2.0.22-stable;$(LIB_PATH);D:\working_zyzr\zyzr_frame_asio\deps\libs;D:\open_source\RakNet-master\Lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(INC_PATH);D:\open_source\libevent-2.0.22-stable\include;D:\open_source\libevent-2.0.22-stable\WIN32-Code;D:\open_source\RakNet-master\Source;$(VC_IncludePath);$(WindowsSDK_IncludePath);..\logger\inc</IncludePath>
+    <LibraryPath>D:\open_source\boost_1_59_0\stage\lib;D:\open_source\libevent-2.0.22-stable;$(LIB_PATH);D:\working_zyzr\zyzr_frame_asio\deps\libs;D:\open_source\RakNet-master\Lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NETCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./inc;./src;../logger/inc;../../logger/inc/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libevent_core.lib;loggerd.lib;RakNet_VS2008_DLL_Debug_Win32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\libs</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /B /Y $(OutDir)$(TargetName)$(TargetExt) ..\libs
+copy /B /Y $(OutDir)$(TargetName).lib ..\libs</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NETCORE_EXPORTS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./inc;./src;../logger/inc;../../logger/inc/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libevent_core.lib;loggerd.lib;RakNet_VS2008_DLL_Debug_x64.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\libs</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /B /Y $(OutDir)$(TargetName)$(TargetExt) ..\libs
+copy /B /Y $(OutDir)$(TargetName).lib ..\libs</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NETCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./inc;./src;../logger/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libevent_core.lib;logger.lib;RakNet_VS2008_DLL_Release_Win32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\libs</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /B /Y $(OutDir)$(TargetName)$(TargetExt) ..\libs
+copy /B /Y $(OutDir)$(TargetName).lib ..\libs</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NETCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./inc;./src;../logger/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libevent_core.lib;logger.lib;RakNet_VS2008_DLL_Debug_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\libs</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /B /Y $(OutDir)$(TargetName)$(TargetExt) ..\libs
+copy /B /Y $(OutDir)$(TargetName).lib ..\libs</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AcceptServer.cpp" />
+    <ClCompile Include="src\IoServer.cpp" />
+    <ClCompile Include="src\MsgBlock.cpp" />
+    <ClCompile Include="src\netcore.cpp" />
+    <ClCompile Include="src\Session.cpp" />
+    <ClCompile Include="src\SessionBlock.cpp" />
+    <ClCompile Include="src\SessionEventBuffer.cpp" />
+    <ClCompile Include="src\SessionServer.cpp" />
+    <ClCompile Include="src\SessionServerImp.cpp" />
+    <ClCompile Include="src\SessionServerRaknet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\MsgBlock.h" />
+    <ClInclude Include="inc\netcoredef.h" />
+    <ClInclude Include="inc\SessionHandle.h" />
+    <ClInclude Include="inc\SessionServer.h" />
+    <ClInclude Include="src\AcceptServer.h" />
+    <ClInclude Include="src\IoServer.h" />
+    <ClInclude Include="src\Session.h" />
+    <ClInclude Include="src\SessionBlock.h" />
+    <ClInclude Include="src\SessionEvent.h" />
+    <ClInclude Include="src\SessionEventBuffer.h" />
+    <ClInclude Include="src\SessionServerImp.h" />
+    <ClInclude Include="src\SessionServerRaknet.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

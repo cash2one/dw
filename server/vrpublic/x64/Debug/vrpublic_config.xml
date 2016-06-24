@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root> 
+	<gate ip_addr="192.168.11.21" port="9100" />
+	<vr ip_addr="192.168.11.78" port="9200" />
+	<data_center ip_addr="192.168.11.21" port="3306" db_name="zy2_dc" user_name="dbconn" passwd="kIOW2edS" />
+	<data_douwu ip_addr="192.168.11.21" port="3306" db_name="zy2_douwu" user_name="dbconn" passwd="kIOW2edS" />
+	<guid ip_addr="192.168.11.21" port="9300" />
+</root>

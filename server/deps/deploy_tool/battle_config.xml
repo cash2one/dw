@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root> 
+	<battle battle_id="$server_id" delete_frame_pack="0" />
+	<gate ip_addr="$gate_ip" port="$gate_port" />
+	<tr ip_addr="$ip_addr" port="$tr_port" />
+</root>

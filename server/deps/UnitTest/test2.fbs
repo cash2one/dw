@@ -1,0 +1,23 @@
+enum Color2:byte { Red = 0, Green, Blue = 2 }
+
+union Any2 { Monster2 }  // add more elements..
+
+table Vec32 {
+  x:float;
+  y:float;
+  z:float;
+}
+
+table Monster2 {
+  pos:Vec32;
+  mana:short = 150;
+  hp:short = 100;
+  x1: long;
+  x2: double;
+  name:string;
+  friendly:bool = false (deprecated);
+  inventory:[ubyte];
+  color:Color2 = Blue;
+}
+
+root_type Monster2;

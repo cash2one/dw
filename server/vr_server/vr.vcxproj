@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C3E46FD9-80F5-4EE7-B3A3-75649F09582B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>vr</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(INC_PATH);../deps/netcore/inc;..\deps\libevent;..\deps\boost;..\deps\logger\inc;..\deps;..\battle_server\src;..\battle_server\tools;..\battle_server\protocol;..\deps\simplexml\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>..\deps\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>../deps/netcore/inc;..\deps\libevent;..\deps\boost;..\deps\logger\inc;..\deps;..\battle_server\src;..\battle_server\tools;..\battle_server\protocol;..\deps\simplexml\inc;..\deps\MySQL_5_1\include;..\deps\entity;..\deps\protobuf;..\deps\mysql++;..\guidsys\inc;..\deps\entity\entity;$(IncludePath)</IncludePath>
+    <LibraryPath>..\deps\libs;$(LibraryPath)</LibraryPath>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.metagen;*.bi</ExtensionsToDeleteOnClean>
+    <OutDir>..\bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>simplexmld.lib;loggerd.lib;netcored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;MYSQLPP_NO_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\deps\;..\deps\dynamicparse\inc;..\deps\utility\inc;..\deps\entity\entity\vr;..\plugins\PlayerLoginVR\src;..\deps\plugin\inc;..\deps\msg_plugins\cpp;..\deps\pool\inc;..\plugins\FRSystemVR\src;..\plugins\TrSystem\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>loggerd.lib;netcored.lib;libprotobufd.lib;simplexmld.lib;plugin.lib;dynamicparse.lib;mysqlpp_d.lib;pool.lib;PlayerLoginVR.lib;FRSystemVR.lib;TrSystemVr.lib;utility.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\battle_server\protocol\inter_proto.pb.cc" />
+    <ClCompile Include="..\battle_server\src\PackMsg.cpp" />
+    <ClCompile Include="..\battle_server\src\Redirect.cpp" />
+    <ClCompile Include="..\battle_server\src\StatCount.cpp" />
+    <ClCompile Include="..\battle_server\src\StatTime.cpp" />
+    <ClCompile Include="..\battle_server\tools\ManageDbPing.cpp" />
+    <ClCompile Include="..\battle_server\tools\ManageSingleton.cpp" />
+    <ClCompile Include="..\battle_server\tools\MessagePump.cpp" />
+    <ClCompile Include="..\battle_server\tools\PacketHandle.cpp" />
+    <ClCompile Include="..\battle_server\tools\Packet_.cpp" />
+    <ClCompile Include="..\battle_server\tools\Singleton.cpp" />
+    <ClCompile Include="..\deps\entity\entity\vr\account.pb.cc" />
+    <ClCompile Include="..\deps\entity\entity\vr\cache_auto_assistant.cpp" />
+    <ClCompile Include="..\guidsys\inc\MakeGuid.cpp" />
+    <ClCompile Include="src\Account.cpp" />
+    <ClCompile Include="src\BaseFunc.cpp" />
+    <ClCompile Include="src\ClientMessageManager.cpp" />
+    <ClCompile Include="src\ManageAccount.cpp" />
+    <ClCompile Include="src\ManageClientMsgPump.cpp" />
+    <ClCompile Include="src\ManageClientPacket.cpp" />
+    <ClCompile Include="src\ManageDB.cpp" />
+    <ClCompile Include="src\ManageFriendMsgPump.cpp" />
+    <ClCompile Include="src\ManageFriendSession.cpp" />
+    <ClCompile Include="src\ManagerClientSession.cpp" />
+    <ClCompile Include="src\ManageSummoner.cpp" />
+    <ClCompile Include="src\ManageTrMsgPump.cpp" />
+    <ClCompile Include="src\ManageTrSession.cpp" />
+    <ClCompile Include="src\ManageVrpublicMessage.cpp" />
+    <ClCompile Include="src\ManageVrpublicMsgPump.cpp" />
+    <ClCompile Include="src\ManageVrpublicPacket.cpp" />
+    <ClCompile Include="src\ManageVrpublicSession.cpp" />
+    <ClCompile Include="src\MessageMaker.cpp" />
+    <ClCompile Include="src\Summoner.cpp" />
+    <ClCompile Include="src\vr.cpp" />
+    <ClCompile Include="src\VrConfig.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\battle_server\protocol\common_generated.h" />
+    <ClInclude Include="..\battle_server\protocol\framecmd_c2c_generated.h" />
+    <ClInclude Include="..\battle_server\protocol\framecmd_c2s_generated.h" />
+    <ClInclude Include="..\battle_server\protocol\framesync_generated.h" />
+    <ClInclude Include="..\battle_server\protocol\inter_proto.pb.h" />
+    <ClInclude Include="..\battle_server\protocol\lobby_generated.h" />
+    <ClInclude Include="..\battle_server\protocol\protocol_generated.h" />
+    <ClInclude Include="..\battle_server\src\PackMsg.h" />
+    <ClInclude Include="..\battle_server\src\Redirect.h" />
+    <ClInclude Include="..\battle_server\src\StatCount.h" />
+    <ClInclude Include="..\battle_server\src\StatTime.h" />
+    <ClInclude Include="..\battle_server\tools\Handle.h" />
+    <ClInclude Include="..\battle_server\tools\ManageDbPing.h" />
+    <ClInclude Include="..\battle_server\tools\ManageSingleton.h" />
+    <ClInclude Include="..\battle_server\tools\MessagePump.h" />
+    <ClInclude Include="..\battle_server\tools\PacketHandle.h" />
+    <ClInclude Include="..\battle_server\tools\Packet_.h" />
+    <ClInclude Include="..\battle_server\tools\Singleton.h" />
+    <ClInclude Include="..\deps\entity\entity\vr\account.pb.h" />
+    <ClInclude Include="..\deps\entity\entity\vr\cache_auto_assistant.h" />
+    <ClInclude Include="..\guidsys\inc\MakeGuid.h" />
+    <ClInclude Include="src\Account.h" />
+    <ClInclude Include="src\BaseFunc.h" />
+    <ClInclude Include="src\ClientMessageManager.h" />
+    <ClInclude Include="src\common_define.h" />
+    <ClInclude Include="src\ManageAccount.h" />
+    <ClInclude Include="src\ManageClientMsgPump.h" />
+    <ClInclude Include="src\ManageClientPacket.h" />
+    <ClInclude Include="src\ManageDB.h" />
+    <ClInclude Include="src\ManageFriendMsgPump.h" />
+    <ClInclude Include="src\ManageFriendSession.h" />
+    <ClInclude Include="src\ManagerClientSession.h" />
+    <ClInclude Include="src\ManageSummoner.h" />
+    <ClInclude Include="src\ManageTrMsgPump.h" />
+    <ClInclude Include="src\ManageTrSession.h" />
+    <ClInclude Include="src\ManageVrpublicMessage.h" />
+    <ClInclude Include="src\ManageVrpublicMsgPump.h" />
+    <ClInclude Include="src\ManageVrpublicPacket.h" />
+    <ClInclude Include="src\ManageVrpublicSession.h" />
+    <ClInclude Include="src\MessageMaker.h" />
+    <ClInclude Include="src\Summoner.h" />
+    <ClInclude Include="src\VrConfig.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

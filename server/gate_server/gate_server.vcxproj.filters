@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="client">
+      <UniqueIdentifier>{ffc32dee-9090-4584-8f0c-a17fb08618eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{02bedb85-cc13-4eaa-b53d-3364be91c9a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{c5baa443-74a7-4b26-953f-54e6c5dcd573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{73a3d191-70e2-4c91-8c0a-504850159f83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ManageClientSession.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\battle_server\src\StatCount.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\battle_server\src\StatTime.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\battle_server\src\PackMsg.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\battle_server\src\Redirect.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\battle_server\tools\Packet_.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ManageServerSession.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GateConfig.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ManageClientPing.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ManageClientSession.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\protocol\framesync_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\protocol\lobby_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\protocol\protocol_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\protocol\common_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\protocol\framecmd_c2c_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\protocol\framecmd_c2s_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\src\StatCount.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\src\StatTime.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\src\PackMsg.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\src\Redirect.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\tools\Handle.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\tools\Packet_.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ManageServerSession.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GateConfig.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\battle_server\protocol\inter_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ManageClientPing.h">
+      <Filter>client</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

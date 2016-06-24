@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{811f1505-aacc-4ceb-bd70-f161c6a4d900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{9fb86929-6406-4182-881b-e6a54511ee54}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\pool.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\actor.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\loader.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\pool.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

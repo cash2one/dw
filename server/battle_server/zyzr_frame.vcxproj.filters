@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{23549e9c-e2de-48a5-a956-5f0df7483d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{50be023e-0408-4484-9994-b7302039ded2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{ff83ea3f-8082-4b74-b33e-deb85e0d000c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gate">
+      <UniqueIdentifier>{4fce2d55-94bc-44a1-908d-41e3f37169ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tr">
+      <UniqueIdentifier>{d8e4340d-0d42-45a1-b6ed-c4812a911c46}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BattleManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BattleRole.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Battle.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PackMsg.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BattleTeam.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\Packet_.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StatCount.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StatTime.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayerManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Redirect.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ProtocolBuilder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ManageStat.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ManageClientValidation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ManagerSession.cpp">
+      <Filter>gate</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\ManageSingleton.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\Singleton.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ManageTrSession.cpp">
+      <Filter>tr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BattleConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MessageMaker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BattleResult.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BattleManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BattleRole.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Battle.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\Handle.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\lobby_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\protocol_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\common_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\framecmd_c2c_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\framecmd_c2s_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\framesync_generated.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PackMsg.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BattleTeam.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\Packet_.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EmptyMsg.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StatCount.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StatTime.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BattleType.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\BattleLog.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Redirect.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ProtocolBuilder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ManageStat.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ManageClientValidation.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ManagerSession.h">
+      <Filter>gate</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\ManageSingleton.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\Singleton.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ManageTrSession.h">
+      <Filter>tr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BattleConfig.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MessageMaker.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\ManageState.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BattleSetting.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BattleResult.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

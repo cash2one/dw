@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{c3eccb98-976a-4eef-baf2-cdaf102cac98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{80c7a8df-0c3e-4f60-a7de-2f2daf406d51}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\typedef.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Single.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\convert.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\timer.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\convert.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

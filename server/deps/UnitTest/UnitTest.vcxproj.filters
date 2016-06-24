@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="proto">
+      <UniqueIdentifier>{fdcbebd9-1b00-48aa-a919-034e00b2e976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fsm">
+      <UniqueIdentifier>{edba95c8-57d4-4c49-a816-c7435d9352ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testPool.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testLoader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testFunctionTraits.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testPlugin.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\entity\entity\vr\account.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="testfsm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fsm\DoorFSM.h">
+      <Filter>fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="fsm\DoorFSMLogic.h">
+      <Filter>fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="testRemoveNote.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test_generated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test2_generated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\entity\entity\vr\account.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="fsm\DoorFSM.cpp">
+      <Filter>fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="fsm\DoorFSMLogic.cpp">
+      <Filter>fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="idl_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reflection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="idl_gen_text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

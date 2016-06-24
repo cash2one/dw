@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root> 
+	<vr area_id="8" server_id="8" />
+	<gate ip_addr="192.168.11.21" port="18030" net_type="1" />
+	<tr ip_addr="192.168.11.78" port="18040" />
+	<vrpublic ip_addr="192.168.11.21" port="9200" />
+	<guid ip_addr="192.168.11.21" port="9900" />
+	<friend ip_addr="192.168.11.21" port="18080" />
+	
+	<db ip_addr="192.168.11.119" port="3306" db_name="game" user_name="root" passwd="123456" />
+	<proto path="..\deps\entity\proto\vr"/>
+</root>

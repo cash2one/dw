@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root> 
+	<head-file path="..\..\Entity\entity\vr\cache_auto_assistant.h" />
+	<cpp-file path="..\..\Entity\entity\vr\cache_auto_assistant.cpp" />
+	<template-file path="template.txt" />
+	<proto-xml-file path="dbass.xml" />
+	<proto path=".\" db-out=".\">
+		<file path="Account.proto" />
+	</proto>
+	<db-script-file path="..\..\Entity\db\account.sql" />
+</root>
