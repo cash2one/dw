@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<root> 
-	<gate ip_addr="$gate_ip" port="$gate_port" />
-	<vr ip_addr="$ip_addr" port="$vr_port" />
-	<data_center ip_addr="192.168.11.21" port="3306" db_name="zy2_dc" user_name="dbconn" passwd="kIOW2edS" />
-	<data_douwu ip_addr="192.168.11.21" port="3306" db_name="zy2_douwu" user_name="dbconn" passwd="kIOW2edS" />
-	<guid ip_addr="$guid_ip" port="$guid_port" />
-</root>

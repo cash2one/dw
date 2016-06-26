@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<root> 
-	<vr ip_addr="192.168.11.78" port="12110" />
-	<battle ip_addr="192.168.11.78" port="12120" />
-</root>

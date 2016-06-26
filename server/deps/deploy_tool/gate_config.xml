@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<root> 
-	<client ip_addr="$client_ip" port="$client_port" net_type="2" ping_interval="5000" />
-	<server ip_addr="$server_ip" port="$server_port" />
-</root>

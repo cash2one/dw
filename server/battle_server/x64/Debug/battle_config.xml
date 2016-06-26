@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<root> 
-	<battle battle_id="1" delete_frame_pack="0" />
-	<gate ip_addr="192.168.11.21" port="12220" />
-	<tr ip_addr="192.168.11.78" port="12120" />
-</root>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<root> 
-	<friend ip_addr="192.168.11.127" port="9940" />
-	<db ip_addr="192.168.11.21" port="3306" db_name="zy2_friend" user_name="dbconn" passwd="kIOW2edS" />
-</root>
